@@ -2,7 +2,7 @@
 FROM java:8-jdk-alpine
 
 # Moving the app artifact from the host to the container
-COPY ./target/bootiful-elk-0.0.1-SNAPSHOT.jar /usr/app/app.jar
+COPY ./target/app-0.0.1-SNAPSHOT.jar /usr/app/app.jar
 
 # The WORKDIR instruction sets the working directory for any RUN, CMD, ENTRYPOINT, COPY and ADD instructions that follow it in the Dockerfile.
 WORKDIR /usr/app
